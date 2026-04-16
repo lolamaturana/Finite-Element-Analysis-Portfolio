@@ -2,23 +2,23 @@
 
 # Finite Element Analysis: Bending of a Concrete Beam with Holes
 
-## Descripción del Proyecto
-[cite_start]Este proyecto analiza el comportamiento de dos diseños de vigas de hormigón en voladizo con diferentes formas de huecos bajo una carga uniforme[cite: 316]. [cite_start]El objetivo principal es evaluar y comparar la deformación y la distribución de esfuerzos utilizando el método de elementos finitos[cite: 44, 343].
+## Project Description
+This project analyzes the behavior of two cantilever concrete beam designs with different hole shapes subjected to a uniform load. The primary objective is to evaluate and compare deformation and stress distribution using the finite element method.
 
-Los dos diseños analizados son:
-* [cite_start]**Diseño 1:** Viga con dos huecos circulares[cite: 13].
-* [cite_start]**Diseño 2:** Viga con dos huecos cuadrados rotados[cite: 13].
+The two analyzed designs are:
+* **Design 1:** Beam with two circular holes.
+* **Design 2:** Beam with two rotated square holes.
 
-## Metodología
-[cite_start]El análisis computacional se llevó a cabo utilizando el software de simulación Abaqus[cite: 59]. 
-* [cite_start]**Elementos:** Se utilizaron elementos triangulares de 3 nodos bajo condiciones de tensión plana[cite: 60].
-* [cite_start]**Mallado:** Se ejecutaron modelos con dos densidades de malla diferentes (una malla gruesa de ~1120 elementos y una malla fina de ~2000 elementos) para evaluar la convergencia y precisión de los resultados[cite: 61, 62].
-* [cite_start]**Validación:** Los resultados de los esfuerzos axiales ($\sigma_{xx}$) se compararon con los resultados teóricos calculados mediante la teoría de vigas de Euler-Bernoulli[cite: 63, 310].
+## Methodology
+The computational analysis was performed using Abaqus simulation software.
+* **Elements:** 3-node triangular elements were used under plane stress conditions.
+* **Meshing:** Two different mesh densities were implemented: a coarse mesh (~1120 elements) and a fine mesh (~2000 elements) to assess convergence and result accuracy.
+* **Validation:** Axial stress results ($\sigma_{xx}$) were compared against theoretical values derived from Euler-Bernoulli beam theory.
 
-## Resultados Destacados
-* [cite_start]**Desplazamiento:** Ambas vigas mostraron una respuesta global similar, presentando los mayores desplazamientos en el extremo libre[cite: 317]. [cite_start]La viga con huecos circulares mostró deflexiones ligeramente mayores, indicando una menor rigidez para ese diseño[cite: 318].
-* [cite_start]**Esfuerzos de Von Mises:** La concentración de esfuerzos más alta se produjo cerca de los soportes fijos, donde la flexión es mayor[cite: 319]. [cite_start]La diferencia de esfuerzo máximo entre los agujeros circulares y cuadrados fue mínima, lo que indica que la carga global gobernó la distribución más que la forma del agujero[cite: 302].
-* [cite_start]**Refinamiento de Malla:** La comparación demostró que la malla fina capturó de manera mucho más precisa los gradientes de esfuerzo agudos y las concentraciones locales alrededor de los huecos, algo que las ecuaciones clásicas y la malla gruesa tienden a suavizar[cite: 325, 326].
+## Key Results
+* **Displacement:** Both beams exhibited a similar global response, with maximum displacement at the free end. The beam with circular holes showed slightly higher deflections (max 13.62 $\mu$m) compared to the square hole design (max 13.22 $\mu$m), indicating slightly lower stiffness.
+* **Von Mises Stresses:** The highest stress concentrations occurred near the fixed supports where bending is greatest. The maximum Von Mises stress difference between the circular (19.62 Pa) and square (19.27 Pa) designs was minimal, suggesting that global loading governed distribution more than hole shape.
+* **Mesh Refinement:** The comparison demonstrated that the fine mesh accurately captured sharp stress gradients and local concentrations around the holes, which the theoretical equations and coarse mesh tended to smooth over.
 
-## Contexto Académico
-[cite_start]Este proyecto fue desarrollado para el curso *ENMEE3332 - Finite Elements* en la Universidad de Columbia (Otoño 2025)[cite: 8, 332].
+## Academic Context
+This project was developed for the course *ENMEE3332 - Finite Elements* at Columbia University, Fu Foundation School of Engineering and Applied Science (Fall 2025), under the supervision of Professor H. Waisman.
